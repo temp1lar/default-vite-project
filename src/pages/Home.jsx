@@ -71,7 +71,7 @@ export const Home = () => {
                                 background: 'red.600',
                             }}
                         >
-                            Удалить
+                            Delete
                         </Button>
                     </ListItem>
                 ))}
@@ -87,7 +87,7 @@ export const Home = () => {
                 gap="20px"
             >
                 <Input
-                    placeholder="Напишите задачу..."
+                    placeholder="Input task..."
                     maxLength={80}
                     value={text}
                     onChange={(e) => setText(e.target.value)}
@@ -104,7 +104,7 @@ export const Home = () => {
                         background: 'blue.600',
                     }}
                 >
-                    Добавить задачу
+                    Add task
                 </Button>
             </chakra.form>
              <Button
@@ -112,7 +112,7 @@ export const Home = () => {
                     fileDownload(JSON.stringify(todos), 'todo-data.json')
                 }}
             >
-                Экспорт
+                Export
             </Button>
             <chakra.form
                 onSubmit={(e) => {
@@ -140,7 +140,7 @@ export const Home = () => {
                         background: 'blue.600',
                     }}
                 >
-                    Импорт
+                    Import
                 </Button>
             </chakra.form>
         </Flex>
